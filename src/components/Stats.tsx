@@ -96,7 +96,7 @@ function StatCard({
 
 export default function Stats() {
   return (
-    <section className="relative py-24 md:py-24">
+    <section className="relative py-10 md:py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <SectionHeading
           title="Command Center"

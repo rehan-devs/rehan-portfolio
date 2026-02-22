@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 const projects = [
@@ -11,7 +11,6 @@ const projects = [
     tags: ["React", "Tailwind CSS", "GSAP"],
     image: "/projects/flowsync.png",
     liveUrl: "#",
-    githubUrl: "#",
     gradient: "from-purple-600/20 to-blue-600/20",
     accentColor: "purple",
   },
@@ -20,7 +19,6 @@ const projects = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     image: "/projects/aurum.png",
     liveUrl: "#",
-    githubUrl: "#",
     gradient: "from-orange-600/20 to-red-600/20",
     accentColor: "orange",
   },
@@ -29,7 +27,6 @@ const projects = [
     tags: ["HTML5", "CSS3", "JavaScript", "GSAP"],
     image: "/projects/nexus.png",
     liveUrl: "#",
-    githubUrl: "#",
     gradient: "from-cyan-600/20 to-purple-600/20",
     accentColor: "cyan",
   },
@@ -38,7 +35,6 @@ const projects = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     image: "/projects/stride.png",
     liveUrl: "#",
-    githubUrl: "#",
     gradient: "from-green-600/20 to-teal-600/20",
     accentColor: "green",
   },
@@ -75,7 +71,7 @@ function ProjectCard({
     <img
       src={project.image}
       alt={project.name}
-      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+      className="w-full h-full object-cover object-[center_40%] sm:object-top transition-transform duration-500 group-hover:scale-105"
     />
   ) : (
     <>
@@ -117,30 +113,19 @@ function ProjectCard({
         </div>
 
         {/* Action Links */}
-        <div className="flex items-center gap-3">
-          <motion.a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium gradient-bg text-white hover:shadow-lg hover:shadow-accent-purple/20 transition-shadow duration-300"
-          >
-            <ExternalLink size={14} />
-            Live Demo
-          </motion.a>
-          <motion.a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-white/[0.1] text-text-secondary hover:text-white hover:border-white/20 transition-all duration-300"
-          >
-            <Github size={14} />
-            GitHub
-          </motion.a>
-        </div>
+<div className="flex items-center gap-3">
+  <motion.a
+    href={project.liveUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium gradient-bg text-white hover:shadow-lg hover:shadow-accent-purple/20 transition-shadow duration-300"
+  >
+    <ExternalLink size={14} />
+    Live Demo
+  </motion.a>
+</div>
       </div>
     </motion.div>
   );
@@ -148,7 +133,7 @@ function ProjectCard({
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 md:py-24">
+    <section id="projects" className="relative py-10 md:py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <SectionHeading
           title="PROJECTS"

@@ -129,7 +129,7 @@ function SkillCard({
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-24 md:py-24">
+    <section id="skills" className="relative py-10 md:py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <SectionHeading
           title="TECH Stack"

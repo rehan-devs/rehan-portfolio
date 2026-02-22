@@ -155,7 +155,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.8 }}
-          className="pb-10 ml-4 mt-8"
+          className="pb-4 sm:pb-10 ml-4 mt-4 sm:mt-8"
         >
           <motion.a
             href="#social-section"
