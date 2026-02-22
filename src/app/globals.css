@@ -165,3 +165,11 @@ textarea:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #1a1a1a inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+h1, h2, h3, h4, h5, h6, p, span, a, button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+button, a {
+  user-select: none;
+  -webkit-user-select: none;
+}
