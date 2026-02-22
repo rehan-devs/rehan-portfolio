@@ -12,13 +12,14 @@ export const metadata: Metadata = {
   title: "Muhammad Rehan — Front End Developer",
   description:
     "Designing fast, responsive web experiences from concept to code. Specialized in React, Next.js, and Tailwind CSS.",
+  metadataBase: new URL("https://your-site-name.vercel.app"),
   openGraph: {
     title: "Muhammad Rehan — Front End Developer",
     description:
       "Designing fast, responsive web experiences from concept to code. Specialized in React, Next.js, and Tailwind CSS.",
     type: "website",
     locale: "en_US",
-    url: "https://rehan.dev",
+    url: "https://your-site-name.vercel.app",
     siteName: "Muhammad Rehan Portfolio",
     images: [
       {
