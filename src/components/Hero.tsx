@@ -74,7 +74,7 @@ export default function Hero() {
             {/* Available Badge */}
            <motion.div
            variants={itemVariants}
-           className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.08] bg-white/[0.03] mb-10 mt-10"
+           className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.08] bg-white/[0.03] mb-10 mt-14"
           >
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
            <span className="text-sm text-text-secondary font-medium">
@@ -155,7 +155,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.8 }}
-          className="pb-4 sm:pb-10 ml-3 mt-4 sm:mt-8"
+          className="pb-4 sm:pb-10 ml-4 mt-4 sm:mt-8"
         >
           <motion.a
             href="#social-section"
