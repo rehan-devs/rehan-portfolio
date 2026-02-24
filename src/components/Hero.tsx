@@ -158,20 +158,17 @@ export default function Hero() {
           className="pb-4 sm:pb-10 ml-0 mt-4 sm:mt-4"
         >
           <motion.a
-            href="#social-section"
-            onClick={(e) => {
-              e.preventDefault();
-              document
-                .querySelector("#social-section")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="flex flex-col items-center gap-2 text-text-muted hover:text-accent-purple transition-colors cursor-pointer"
-          >
-            <span className="text-xs font-medium uppercase tracking-widest">
-              Scroll
-            </span>
-            <ChevronDown size={18} className="scroll-indicator" />
-          </motion.a>
+  href="#social-section"
+  onClick={(e) => {
+    e.preventDefault();
+    document
+      .querySelector("#social-section")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="flex flex-col items-center text-text-muted hover:text-accent-purple transition-colors cursor-pointer"
+>
+  <ChevronDown size={20} className="scroll-indicator" />
+</motion.a>
         </motion.div>
       </section>
 
